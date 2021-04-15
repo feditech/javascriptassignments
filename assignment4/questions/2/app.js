@@ -1,15 +1,29 @@
-var a=10;
-var b=20;
-var sub =a-b;
-var mul =a*b;
-var div =a/b;
-var mod =a%b;
+var a =2;
+var b =1;
+document.write("<h3>" +"a: "+ a + "</h3>")
+document.write("<h3>" +"b: "+ b + "</h3>")
 
 
 
+var result = --a;
+document.write("<h3>" +"a: "+ a + "</h3>")
+document.write("<h3>" +"b: "+ b + "</h3>")
+document.write("<h3>" +"result: "+ result + "</h3>")
 
 
-document.write("<h2>"+"Subtraction of " + a+ " and "+ b + " is "+ sub+ "</h2>")
-document.write("<h2>"+"Multiplication of " + a+ " and "+ b + " is "+ mul+ "</h2>")
-document.write("<h2>"+"Division of " + a+ " and "+ b + " is "+ div+ "</h2>")
-document.write("<h2>"+"Modulus of " + a+ " and "+ b + " is "+ mod+ "</h2>")
+var result = --a - --b;
+document.write("<h3>" +"a: "+ a + "</h3>")
+document.write("<h3>" +"b: "+ b + "</h3>")
+document.write("<h3>" +"result: "+ result + "</h3>")
+
+
+
+var result = --a - --b + ++b;
+document.write("<h3>" +"a: "+ a + "</h3>")
+document.write("<h3>" +"b: "+ b + "</h3>")
+document.write("<h3>" +"result: "+ result + "</h3>")
+
+var result = --a - --b + ++b + b--;
+document.write("<h3>" +"a: "+ a + "</h3>")
+document.write("<h3>" +"b: "+ b + "</h3>")
+document.write("<h3>" +"result: "+ result + "</h3>")
