@@ -1,5 +1,11 @@
-var a= ((10 + 5) *10 )/2;
+temp = +prompt("Enter temperature ")
 
-document.write("<h3>" +"a= ((10 + 5) *10 )/2 " + "</h3>" )
-
-document.write("<h2>" +"After Calculation: "+ a + "</h2>")
+if(temp > 40){
+    alert("It is hot outside")
+}else if( temp > 30){
+    alert("The Weather today is normal")
+}else if( temp > 20){
+    alert("Today's Weather is cool")
+}else if( temp > 10){
+    alert("OMG! Today's weather is so cool")
+}
