@@ -1,4 +1,4 @@
-temp = +prompt("Enter temperature ")
+var temp = +prompt("Enter temperature ")
 
 if(temp > 40){
     alert("It is hot outside")

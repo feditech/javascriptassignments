@@ -1,4 +1,4 @@
-userinput = +prompt("Enter a nmunber")
+var userinput = +prompt("Enter a nmunber")
 
 if(userinput % 3 === 0 ){
   alert("number is divisible by 3")
