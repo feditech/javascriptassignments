@@ -1,3 +1,5 @@
-var ticketPrice= 600;
+fuel = prompt("enter remaining fuel of car")
 
-document.write("<h2>"+ "Total cost of buying 5 tickets to a movie is: " + ticketPrice*5 +"</h2>")
+if(fuel < 0.25 ){
+alert( " “Please refill the fuel in your car”")
+}
