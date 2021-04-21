@@ -1,4 +1,4 @@
-var userinput = +prompt("Enter a Number ")
+userinput = +prompt("Enter a Number ")
 
 if(userinput % 2 === 0){
     alert("EVEN NUMBER")
