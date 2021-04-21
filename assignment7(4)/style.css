@@ -39,4 +39,12 @@ td{
     td{
         font-size: 14px;
     }
+    .mainheading > h1 {
+        font-size: 20px;
+        margin: 3px;
+    }
+    .mainheading > h2{
+        font-size: 18px;
+        margin: 2px;
+    }
   }
