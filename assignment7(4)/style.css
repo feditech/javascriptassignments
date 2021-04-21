@@ -1,0 +1,42 @@
+table{
+    border: 1px;
+}
+
+td{
+    font-size: 24px;
+    width: 150px;
+    height: 15px;
+    text-align: center;
+}
+.row1{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.tbl{
+    margin: 0 auto;
+}
+.mainheading{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    background-color: violet;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+    
+    td{
+        font-size: 14px;
+    }
+  }
