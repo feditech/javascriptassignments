@@ -1,4 +1,10 @@
-var input = prompt("Enter your name")
-var greet = " Welcome To My website. Mr. " + input;
+var num1 = +prompt("Enter 1st number")
 
-alert(greet)
+
+if( num1 === 0){
+    alert("You entered 0")
+}else if( num1 > 0){
+    alert("Number is Even")
+}else{
+    alert("Number is Odd")
+}
