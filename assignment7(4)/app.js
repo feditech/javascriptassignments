@@ -122,23 +122,52 @@ sehriTime[30] = "4:25 AM";
 aftariTime[30] = "7:08 PM";
 date[30] = "May 13,Thu";
 
+
+
+
+
+
+
+
+
+
+
+var search = +prompt("enter roza number");
 document.write('<table class="tbl" border="1"  cellspacing="0"  >');
 document.write('<tr class= "row1" > <td>  Sr.  </td> ');
 document.write(" <td>" + "Day" + "</td> ");
 document.write(" <td>" + "Sehar" + "</td> ");
-document.write(" <td>" + "Aftar" + "</td> </tr>");
+document.write(" <td>" + "Iftar" + "</td> </tr>");
 
-for (var i = 1; i <= 30; i++) {
 
-  document.write("<tr> <td>" + [i] + "</td> ");
-  document.write(" <td>" + date[i] + "</td> ");
-  document.write(" <td>" + sehriTime[i] + "</td> ");
-  document.write(" <td>" + aftariTime[i] + "</td> </tr>");
-}
-
-var search = +prompt("enter roza number");
-for (i = 1; i <= 30; i++) {
+for ( var i = 1; i <= 30; i++) {
   if (search === i) {
-    alert("Roza "+[i] + ": "+ " Date: " + date[i] + " Sehar: "  + sehriTime[i] + " Iftar: " + aftariTime[i])
-  }
+    document.write("<tr class=highlight>" + "<td>" + [i] +  " </td>  ");
+    document.write(" <td>" + date[i] + "</td> ");
+    document.write(" <td>" + sehriTime[i] + "</td> ");
+    document.write(" <td>" + aftariTime[i] + "</td> </tr>");       
+    alert("Roza: "+[i] + "\n\n"+ "Date: " + date[i] + "\n\nSehar: "  + sehriTime[i] + "\n\nIftar: " + aftariTime[i])
+    continue
+}else
+document.write("<tr> <td>" + [i] + "</td> ");
+document.write(" <td>" + date[i] + "</td> ");
+document.write(" <td>" + sehriTime[i] + "</td> ");
+document.write(" <td>" + aftariTime[i] + "</td> </tr>");
+
 }
+
+
+
+
+
+
+// var search = +prompt("enter roza number");
+// for (i = 1; i <= 30; i++) {
+//   if (search === i) {
+         
+//     alert("Roza "+[i] + ": "+ " Date: " + date[i] + " Sehar: "  + sehriTime[i] + " Iftar: " + aftariTime[i])
+
+// }
+// }
+
+
