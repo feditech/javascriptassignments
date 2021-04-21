@@ -14,20 +14,26 @@ td{
 }
 
 .tbl{
+    
     margin: 0 auto;
+    width: 70%;
+    border-radius: 5px;
 }
 .mainheading{
     text-align: center;
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
-    background-color: violet;
+    background-color: mediumpurple;
     color: white;
+    border-radius: 10px;
+    margin-bottom: 0;
 }
 .mainheading h1 {
     margin-bottom: 2px;
 }
 .mainheading h2 {
-    margin-top: 0px;
+    margin-top: 0;
+
 }
 .highlight{
     background-color: green;

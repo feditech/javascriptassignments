@@ -133,7 +133,7 @@ date[30] = "May 13,Thu";
 
 
 var search = +prompt("enter roza number");
-document.write('<table class="tbl" border="1"  cellspacing="0"  >');
+document.write('<table class="tbl" border="2px"  cellspacing="0"  >');
 document.write('<tr class= "row1" > <td>  Sr.  </td> ');
 document.write(" <td>" + "Day" + "</td> ");
 document.write(" <td>" + "Sehar" + "</td> ");
