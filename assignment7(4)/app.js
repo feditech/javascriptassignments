@@ -161,13 +161,5 @@ document.write(" <td>" + aftariTime[i] + "</td> </tr>");
 
 
 
-// var search = +prompt("enter roza number");
-// for (i = 1; i <= 30; i++) {
-//   if (search === i) {
-         
-//     alert("Roza "+[i] + ": "+ " Date: " + date[i] + " Sehar: "  + sehriTime[i] + " Iftar: " + aftariTime[i])
-
-// }
-// }
 
 
