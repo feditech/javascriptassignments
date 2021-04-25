@@ -30,6 +30,6 @@ console.log(numbers)
 
 
 console.log("Q5. Declare and initialize a boolean array.")
-var bool = [true , false , nan]
+var bool = [true , false]
 console.log(numbers)
 
