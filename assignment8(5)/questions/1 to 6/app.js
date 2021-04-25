@@ -28,3 +28,8 @@ console.log("Q4. Declare and initialize a numbers array.")
 var numbers = [1 , 4 , 6]
 console.log(numbers)
 
+
+console.log("Q5. Declare and initialize a boolean array.")
+var bool = [true , false , nan]
+console.log(numbers)
+
