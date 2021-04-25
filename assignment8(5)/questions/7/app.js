@@ -1,10 +1,7 @@
-var num1 = +prompt("Enter 1st number")
-var num2 = +prompt("Enter 2nd number")
+var edu =["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"]
 
-if( num1 === num2){
-    alert("EQUAL")
-}else if( num1 > num2){
-    alert(num1 + " is greater than "+ num2)
-}else{
-    alert(num2 + " is greater than "+ num1)
-}
+document.write("<h1>"+"Qualifications:"+"</h1>")
+document.write("<ol>")
+for(var i =0 ; i< edu.length ; i++)
+document.write("<li>" + edu[i]+ "</li>" )
+document.write("</ol>")
