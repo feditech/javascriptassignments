@@ -33,3 +33,8 @@ console.log("Q5. Declare and initialize a boolean array.")
 var bool = [true , false]
 console.log(numbers)
 
+
+
+console.log("Q6. Declare and initialize a mixed array.")
+var mix = [1, "raza" , 2 , " ","ali" , true , false]
+console.log(mix)
