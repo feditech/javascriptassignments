@@ -1,10 +1,8 @@
-var num1 = +prompt("Enter 1st number")
-var num2 = +prompt("Enter 2nd number")
+var numbers = [2,4,3,6,7,8,1,3]
 
-if( num1 === num2){
-    alert("EQUAL")
-}else if( num1 > num2){
-    alert(num1 + " is greater than "+ num2)
-}else{
-    alert(num2 + " is greater than "+ num1)
-}
+document.write("<h2>"+ numbers + "<h2>")
+
+numbers.sort()
+
+
+document.write("<h2>"+ numbers + "<h2>")
