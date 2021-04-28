@@ -1,10 +1,6 @@
-var num1 = +prompt("Enter 1st number")
-var num2 = +prompt("Enter 2nd number")
+var arr = ["This ", "is ", "my ", "cat."]
 
-if( num1 === num2){
-    alert("EQUAL")
-}else if( num1 > num2){
-    alert(num1 + " is greater than "+ num2)
-}else{
-    alert(num2 + " is greater than "+ num1)
-}
+document.write("<h2>" + arr + "<h2>")
+
+var arr1 = arr.join("");
+document.write("<h2>" + arr1 + "<h2>")
