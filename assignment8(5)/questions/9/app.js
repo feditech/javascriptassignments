@@ -38,3 +38,14 @@ colors.shift()
 
 document.write("TASK d:Updated Array:(deleted first)")
 document.write("<h2>" + colors + "</h2>")
+
+
+
+// TASK e. Delete the last color in the array. Display the updated array in your browser.
+colors.pop()
+
+document.write("TASK e:Updated Array:(deleted last)")
+document.write("<h2>" + colors + "</h2>")
+
+
+
