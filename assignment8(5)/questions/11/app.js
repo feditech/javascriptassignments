@@ -1,10 +1,10 @@
-var num1 = +prompt("Enter 1st number")
-var num2 = +prompt("Enter 2nd number")
+var cities = ["Karachi","Lahore","Islamabad","Quetta"]
 
-if( num1 === num2){
-    alert("EQUAL")
-}else if( num1 > num2){
-    alert(num1 + " is greater than "+ num2)
-}else{
-    alert(num2 + " is greater than "+ num1)
-}
+document.write("<h2>"+ cities + "<h2>")
+
+var selectedCities = cities.slice(1,4)
+
+document.write("<h2>"+ selectedCities + "<h2>")
+
+
+
