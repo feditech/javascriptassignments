@@ -1,10 +1,8 @@
-var num1 = +prompt("Enter 1st number")
-var num2 = +prompt("Enter 2nd number")
+var brand = ["Samsung", "Apple" , "Motorola", "Nokia" , "Sony", "Haier"]
+document.write('<h1> <select class="drp">')
 
-if( num1 === num2){
-    alert("EQUAL")
-}else if( num1 > num2){
-    alert(num1 + " is greater than "+ num2)
-}else{
-    alert(num2 + " is greater than "+ num1)
+for(var i=0; i<brand.length; i++){
+document.write("<option>" + brand[i] + "</option>")
 }
+
+document.write('</select> </h1>')
