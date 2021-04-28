@@ -48,4 +48,15 @@ document.write("TASK e:Updated Array:(deleted last)")
 document.write("<h2>" + colors + "</h2>")
 
 
+// f. Ask the user at which index he/she wants to add a color & color name. Then add the color to desired
+// position/index. . Display the updated array in your browser.
+
+var colorIndex = +prompt("enter the index where you want to add new color")
+var newColor = prompt("Enter a color to add at the start")
+
+colors.splice(colorIndex, 0 , newColor)
+document.write("TASK a: Updated Array:(inserted at start)")
+document.write("<h2>" + colors + "</h2>")
+
+
 
