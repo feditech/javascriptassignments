@@ -9,6 +9,23 @@ for( var i = 10; i>=1 ;i--){
 }
 
 document.write("<br>"+"Even"+ "<br>")
-for( var i = 2; i<=20 ;i+2){
+var i =2;
+while( i<=20){
     document.write(i+ "<br>")
+i = i + 2;
+}
+
+
+document.write("<br>"+"Odd"+ "<br>")
+var i =1;
+while( i<=20){
+    document.write(i+ "<br>")
+i = i + 2;
+}
+
+document.write("<br>"+"Series"+ "<br>")
+var i =2;
+while( i<=20){
+    document.write(i+"k" + "<br>")
+i = i + 2;
 }
