@@ -1,9 +1,4 @@
-color = prompt("Enter traffic signal color")
-
-if(color == "red"){
-    alert("Must Stop!")
-}else if(color == "yellow"){
-    alert("Ready to Move!")
-}else if(color == "green"){
-    alert("Move Now!")
+document.write("<br>")
+for( var i = 1; i<=10 ;i++){
+    document.write(i+ "<br>")
 }

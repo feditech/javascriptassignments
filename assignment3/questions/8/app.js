@@ -11,7 +11,12 @@ document.write("<h2>"+ "Obtained Marks: "+ obtainedMarks +"</h2>")
 
 document.write("<h2>"+ "Percentage: "+ percentage +"</h2>")
 
+
+
+
+
 var grade;
+
 if (percentage>=80 && percentage <=100) {
     grade="A+"
   } else if (percentage>=70 && percentage <80) {

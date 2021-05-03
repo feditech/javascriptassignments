@@ -7,8 +7,8 @@ var farTocel = ( far -32 ) * 5/9;
 
 
 document.write("<h2>" + "temp in celcius:" + cel  +  "</h2>")
-document.write("<h2>" + "After conversion:" + celTofar  +  "</h2>")
+document.write("<h2>" + "After conversion in farenheit:" + celTofar  +  "</h2>")
 
 
 document.write("<h2>" + "temp in farenheit:" + far  +  "</h2>")
-document.write("<h2>" + "After conversion:" + farTocel  +  "</h2>")
+document.write("<h2>" + "After conversion to celcius:" + farTocel  +  "</h2>")
