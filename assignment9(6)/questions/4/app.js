@@ -1,5 +1,5 @@
-fuel = prompt("enter remaining fuel of car")
-
-if(fuel < 0.25 ){
-alert( " “Please refill the fuel in your car”")
+var number = +prompt("enter a number to display the table")
+var length = +prompt("enter length")
+for(var i=1;i <= length ;i++){
+    document.write("<h2>"+ number + " * " + [i] + " = " + number*[i]    + "</h2>")
 }
