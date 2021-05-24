@@ -4,9 +4,11 @@ if (++a === 5) {
 }
 
 var b = 82;
+
 if (b++ === 83) {
   alert("given condition for variable b is true");
 }
+
 
 var c = 12;
 if (c++ === 13) {

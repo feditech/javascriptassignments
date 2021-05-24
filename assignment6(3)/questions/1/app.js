@@ -1,4 +1,4 @@
- var ch = prompt("Enter a character")
+var ch = prompt("Enter a character")
 
 if(ch >= 'a' &&  ch <= 'z'){
     alert("lower case letter")

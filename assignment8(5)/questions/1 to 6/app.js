@@ -11,10 +11,8 @@ console.log(students)
 
 console.log("Q2: Declare an empty array using JS object notation to store student names in future.")
 
-class Student {
-    name;
-}
-var s1 = new Student()
+var s1 = new Array(20)
+
 
 console.log(s1)
 
@@ -31,7 +29,7 @@ console.log(numbers)
 
 console.log("Q5. Declare and initialize a boolean array.")
 var bool = [true , false]
-console.log(numbers)
+console.log(bool)
 
 
 

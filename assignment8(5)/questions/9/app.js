@@ -23,7 +23,7 @@ document.write("<h2>" + colors + "</h2>")
 
 // TASK c  Add two more color to the beginning of the array. Display the updated array in your browser.
 while (newColor !== "") {
-    var newColor = prompt("Enter a color to add at the start")
+    var newColor = prompt("Enter a color to add at the start(more than one)")
     if (newColor === "") {
         break;
     }
