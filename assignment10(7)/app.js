@@ -12,3 +12,17 @@ for(var i=1; i<=7; i++){
     --column;
 }
 
+document.write("<br>")
+document.write("Part a")
+document.write("<br>")
+
+for(var i=1; i<=4; i++){
+    
+    for(var j=1; j<=5; j++){
+        document.write("*")        
+    }
+    document.write("<br>")
+}
+
+
+
