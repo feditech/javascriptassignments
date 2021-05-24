@@ -70,3 +70,14 @@ for(var i=10; i>=1; i--){
 
 
 
+document.write("<br>")
+document.write("Part e")
+document.write("<br>")
+
+for(var i=1; i<=5; i++){
+    
+    for(var j=1; j<=i; j++){
+        document.write("*")        
+    }
+    document.write("<br>")
+}
