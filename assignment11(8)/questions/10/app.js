@@ -1,11 +1,8 @@
-var temp = +prompt("Enter temperature ")
+// Write a program that takes user input. Convert and
+// show the input in capital letters.
 
-if(temp > 40){
-    alert("It is hot outside")
-}else if( temp > 30){
-    alert("The Weather today is normal")
-}else if( temp > 20){
-    alert("Today's Weather is cool")
-}else if( temp > 10){
-    alert("OMG! Today's weather is so cool")
-}
+var input = prompt("Enter a string")
+
+
+document.write("<h2>"+ "User input : "+input + "</h2>")
+document.write("<h2>"+ "Upper case "+ input.toUpperCase() + "</h2>")
