@@ -1,4 +1,6 @@
-document.write("<br>")
-for( var i = 1; i<=10 ;i++){
-    document.write(i+ "<br>")
-}
+// Write a program to find the index of letter “n” in the word
+// “Pakistani” and display the result in your browser
+
+var country = "Pakistani"
+document.write("<h2>"+ "String: "+ country +"</h2>")
+document.write("<h2>"+ "index of 'n' "+ country.indexOf('n')+ "</h2>")
