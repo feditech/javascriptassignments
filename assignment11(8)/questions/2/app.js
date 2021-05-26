@@ -1,16 +1,7 @@
-// Declare and initialize an empty multidimensional array.(Array of arrays)
+// Write a program to take a user input about his favorite mobile phone model. 
+// Find and display the length of user input in your browser
 
-var arr1 = [0,1,2,3]
-var arr2 = [1,0,1,2]
-var arr3 = [2,1,0,1]
+var mobile = prompt("Enter your favorite mobile")
 
-var arr = [arr1,arr2,arr3]
-
-document.write("<br>")
-
-for(var i = 0; i< 3 ; i++){
-    for(var j=0; j<4 ; j++){
-        document.write(arr[i][j]+ "                    ")
-    }
-    document.write("<br>")
-}
+document.write("<h2>"+ "My favorite Mobile is "+mobile + "</h2>")
+document.write("<h2>"+ "Length of string is "+mobile.length + "</h2>")
