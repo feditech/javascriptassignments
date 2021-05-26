@@ -1,5 +1,6 @@
-var number = +prompt("enter a number to display the table")
-var length = +prompt("enter length")
-for(var i=1;i <= length ;i++){
-    document.write("<h2>"+ number + " * " + [i] + " = " + number*[i]    + "</h2>")
-}
+// Write a program to find the last index of letter “l” in the
+// word “Hello World” and display the result in your browser.
+
+var greeting = "Hello world"
+document.write("<h2>"+ "String: "+ greeting +"</h2>")
+document.write("<h2>"+ "index of 'l' is "+ greeting.lastIndexOf('l')+ "</h2>")
