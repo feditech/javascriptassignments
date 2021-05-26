@@ -1,12 +1,7 @@
-var fruits = [ "apple" , "banana" , "mango" , "orange" , "strawberry"]
-
-for(var i =0; i<fruits.length; i++){
-document.write("<li>"+ fruits[i] +"</li>")
-}
+// Write a program to find the character at 3rd index in the
+// word “Pakistani” and display the result in your browser.
 
 
-
-for(var i =0; i<fruits.length; i++){
-  document.write("<li>"+ "Element at index:"+ i +" is "+ fruits[i]  +"</li>")
-  }
-  
+var country = "Pakistani"
+document.write("<h2>"+ "String: "+ country +"</h2>")
+document.write("<h2>"+ "character at index  3 is "+ country.charAt(3) + "</h2>")
