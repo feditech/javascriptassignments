@@ -1,17 +1,9 @@
-var A = ["cake" ,"apple pie" ,"cookie" ,"chips" , "patties"  ]
+// Write a program to replace the “Hyder” to “Islam” in the
+// word “Hyderabad” and display the result in your browser.
+
+var str1 = "Hyderabad"
+var str2 = str1.replace("Hyder","Islam")
 
 
-var input = prompt("Welcome to bakery. What do you want?")
-var flag =false;
-for(var i=0; i<A.length; i++ ){
-    if(input===A[i])
-    {
-        flag = true
-    }
-}
-
-if(flag=== true){
-alert(input+ " is available at index "+i)
-}else{
-    alert(input+ " is not available. ")
-}
+document.write("<h2>"+ "String before replacement: "+str1 + "</h2>")
+document.write("<h2>"+ "String after replacement: "+str2 + "</h2>")
