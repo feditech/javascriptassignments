@@ -1,8 +1,24 @@
-// Write a program that takes user input. Convert and
-// show the input in capital letters.
+// 14. You have an array
+// A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
+// Write a program to enable “search by user input” in an
+// array. After searching, prompt the user whether the given
+// item is found in the list or not.
+// Note: Perform case insensitive search. Whether the user
+// enters cookie, Cookie, COOKIE or coOkIE, program
+// should inform about its availability.
 
-var input = prompt("Enter a string")
+var A = ["cake", "apple pie", "cookie", "chips", "patties"]
 
+var userInput= prompt("welcome TO SIR GHOUS BAkery. wHAT DO you want to order? ");
+userInput = userInput.toLocaleLowerCase();
+var res;
+for(var i =0; i<A.length;i++){
+    if(userInput===A[i])
+    var res = userInput;
+}
+if(res === undefined){
+    alert(userInput+ " is not available")
+}else{
+    alert(userInput+ " is available")
+}
 
-document.write("<h2>"+ "User input : "+input + "</h2>")
-document.write("<h2>"+ "Upper case "+ input.toUpperCase() + "</h2>")
