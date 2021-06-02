@@ -1,19 +1,11 @@
-// Write a program that takes user input. Convert and
-// show the input in title case.
+// 11. Create a Date object for the current date and time.
+// Extract the hours, reset the date object an hour ahead and
+// finally display the date object in your browser.
 
-var input = prompt("Enter a string")
-var ar = []
-ar = input.split("") 
-ar[0]= ar[0].toUpperCase()
+var date = new Date();
+console.log(date)
+var updatedDate = date.setHours(date.getHours()+1)
+updatedDate = new Date(updatedDate)
+console.log(updatedDate)
 
-for(var i=0;i<ar.length;i++)
-{
-    if (ar[i] == " ") {
-        ar[i + 1] = ar[i + 1].toUpperCase()
-    }
-}
-
-var res = ar.join("").toString()
-
-console.log(res)
-
+alert("open console")
