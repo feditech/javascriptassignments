@@ -1,7 +1,6 @@
-// Repeat Q1 using string concat() method.
+// 6. Write a program that shows a random number between 1
+// and 100 in your browser.
 
+var ran = Math.floor((Math.random()*100) +1 )
 
-var firstName = prompt("Enter first name:") 
-var lastName = prompt("Enter last name:")
-var fullName = firstName.concat(" ", lastName)
-alert(fullName)
+alert("random number between 1 and 100 is: "+ran)
