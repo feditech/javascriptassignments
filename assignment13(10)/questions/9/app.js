@@ -8,4 +8,5 @@ var dateNow= new Date();
 
 var diff = dateNow.getTime() - ramadan.getTime();
 diff= diff/(1000*60*60*24)
+diff = Math.floor(diff)
 alert(diff+" Days have passed since Ramadan 1")

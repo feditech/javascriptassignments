@@ -1,8 +1,12 @@
-// Write a program that takes user input. Convert and
-// show the input in capital letters.
+// 10. Write a program that displays in your browser the
+// seconds that elapsed between the reference date and the
+// beginning of 2015.
 
-var input = prompt("Enter a string")
+var beginning = new Date("Jan 1 2021")
 
+var dateNow= new Date();
 
-document.write("<h2>"+ "User input : "+input + "</h2>")
-document.write("<h2>"+ "Upper case "+ input.toUpperCase() + "</h2>")
+var diff = dateNow.getTime() - beginning.getTime();
+diff= diff/(1000)
+diff = Math.floor(diff)
+alert(diff+" seconds have passed since start of 2021")
