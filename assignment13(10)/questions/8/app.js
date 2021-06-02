@@ -1,11 +1,7 @@
-// 8. Write a program to replace all occurrences of “and” in the
-// string with “&” and display the result in your browser.
+// 8. Write a program that creates a Date object for the last day
+// of the last month of 2020 and assigns it to variable named
+// laterDate.
 
-var message = "Ali and Sami are best friends. They play cricket and football together."
+var date = new Date("Dec 1 2021");
 
-var message1 = message.replace(/and/g, "&")
-
-
-
-document.write("<h2>"+ "String before replacement: "+message + "</h2>")
-document.write("<h2>"+ "String after replacement: "+message1 + "</h2>")
+console.log(date)
