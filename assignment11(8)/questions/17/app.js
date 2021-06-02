@@ -1,8 +1,5 @@
-// Write a program that takes user input. Convert and
-// show the input in capital letters.
+// 17. Write a program to display the last character of a user
+// input.
 
-var input = prompt("Enter a string")
-
-
-document.write("<h2>"+ "User input : "+input + "</h2>")
-document.write("<h2>"+ "Upper case "+ input.toUpperCase() + "</h2>")
+var userInput = prompt("Enter a string")
+console.log(userInput[userInput.length-1])
