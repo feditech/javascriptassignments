@@ -18,7 +18,8 @@ for(var i =0; i<A.length;i++){
 }
 if(res === undefined){
     alert(userInput+ " is not available")
-}else{
+}
+else{
     alert(userInput+ " is available")
 }
 

@@ -1,8 +1,11 @@
-// Write a program that takes user input. Convert and
-// show the input in capital letters.
+// 16. Write a program to convert the following string to an
+// array using string split method.
+// var university = “University of Karachi”;
+// Display the elements of array in your browser.
 
-var input = prompt("Enter a string")
+var university = "University of Karachi";
+var x = university.split("")
 
-
-document.write("<h2>"+ "User input : "+input + "</h2>")
-document.write("<h2>"+ "Upper case "+ input.toUpperCase() + "</h2>")
+for(var i=0;i<x.length;i++){
+    document.write(x[i]+"<br>")
+}
