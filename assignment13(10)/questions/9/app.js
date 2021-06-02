@@ -1,12 +1,11 @@
-// Write a program that converts a string “472” to a number
-// 472. Display the values & types in your browser.
+// 9. Create a date object of the starting date of this Ramadan
+// and alert the number of days past since 1st Ramadan?
+// Note: 1st Ramadan was on Apr 12, 2021
 
-var str1 = "472"
-var num = Number(str1)
+var ramadan = new Date("Apr 12 2021")
 
+var dateNow= new Date();
 
-document.write("<h2>"+ "Value : "+str1 + "</h2>")
-document.write("<h2>"+ "Type "+ typeof(str1) + "</h2>")
-
-document.write("<h2>"+ "Value : "+num + "</h2>")
-document.write("<h2>"+ "Type "+ typeof(num) + "</h2>")
+var diff = dateNow.getTime() - ramadan.getTime();
+diff= diff/(1000*60*60*24)
+alert(diff+" Days have passed since Ramadan 1")
