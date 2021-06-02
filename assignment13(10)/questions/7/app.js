@@ -1,9 +1,13 @@
-// Write a program to replace the “Hyder” to “Islam” in the
-// word “Hyderabad” and display the result in your browser.
-
-var str1 = "Hyderabad"
-var str2 = str1.replace("Hyder","Islam")
+// 7. Write a program that tests whether it's before noon and
+// alert “Its AM” else “its PM”.
 
 
-document.write("<h2>"+ "String before replacement: "+str1 + "</h2>")
-document.write("<h2>"+ "String after replacement: "+str2 + "</h2>")
+var date = new Date();
+
+var hours = date.getHours()
+
+if(hours<12|| hours ===0){
+    alert("Its AM")
+}else{
+    alert("Its PM")
+}
