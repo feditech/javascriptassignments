@@ -2,4 +2,4 @@
 // your browser.
 
 var date = new Date();
-console.log(date)
+alert(date)
