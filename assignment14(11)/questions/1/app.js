@@ -1,5 +1,9 @@
-// 1. Write a program that displays current date and time in
-// your browser.
+// 1. Write a function that displays current date & time in your
+// browser.
 
+date()
+
+
+function date(){
 var date = new Date();
-alert(date)
+alert(date)}
