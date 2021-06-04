@@ -1,11 +1,21 @@
-// 12. Write a program that creates a date object and show the
-// date in an alert box that is reset to 100 years back?
+// 12. Write a JavaScript function that accepts a string as a
+// parameter and find the longest word within the string.
+// EXAMPLE STRING : 'Web Development Tutorial'
+// EXPECTED OUTPUT : 'Development'
 
 
-var date = new Date();
-console.log(date)
-var updatedDate = date.setFullYear(date.getFullYear()-100)
-updatedDate = new Date(updatedDate)
+var data = prompt("Enter a string")
+alert("Longest word is: "+longestWord(data))
 
-
-alert("100 years back it was: "+updatedDate)
+function longestWord(a) {
+    var arr = []
+    arr = a.split(" ")
+    var max = arr[0]
+    
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i].length > max.length) {
+            max = arr[i]
+        }
+    }
+    return max
+}
