@@ -1,7 +1,28 @@
-// 8. Write a program that creates a Date object for the last day
-// of the last month of 2020 and assigns it to variable named
-// laterDate.
+// 8. Write a nested function that computes hypotenuse of a
+// right angle triangle.
+// Hypotenuse2 = Base2 + Perpendicular2
 
-var date = new Date("Dec 1 2021");
+// Take base and perpendicular as inputs.
+// Outer function : calculateHypotenuse()
+// Inner function: calculateSquare()
 
-console.log(date)
+
+var base = +prompt("Enter base of triangle")
+var perp = +prompt("Enter base of triangle")
+
+alert("hypotenuse is: "+ calculateHypotenuse(base,perp))
+
+
+function calculateHypotenuse(base, perp) {
+    var arr = sqr(base, perp)
+    return arr[0] + arr[1]
+
+}
+
+function sqr(a, b) {
+    var arr = []
+    arr[0] = a * a;
+    arr[1] = b * b;
+
+    return arr
+}
