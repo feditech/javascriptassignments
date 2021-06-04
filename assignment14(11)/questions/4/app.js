@@ -1,34 +1,28 @@
-// 4. Write a program that displays a message “It’s Fun day” if
-// its Saturday or Sunday today.
-
-
-var date = new Date();
-
+// 4. Calculator:
+// Write a function that takes three arguments num1, num2
+// & operator & compute the desired operation. Return and
+// show the desired result in your browser.
 
 
 
 
-switch (date.getDay()) {
-    case 0:
-        alert("Its Fun Day")
-        break
-    case 1:
-        alert("its a working day")
-        break
-    case 2:
-        alert("its a working day")
-        break
-    case 3:
-        alert("its a working day")
-        break
-    case 4:
-        alert("its a working day")
-        break
-    case 5:
-        alert("its a working day")
-        break
-    case 6:
-        alert("Its Fun Day")
-        break
-    
+var n1 = +prompt("Enter first Number")
+var n2 = +prompt("Enter second Number")
+var op = prompt("Enter a operation you want to perform (+,-,*,/)")
+var res = cal(n1,n2,op)
+
+
+
+alert(n1+" "+op+" " +n2+" = "+res)
+
+function cal(a,b,operation){
+if(operation==="+")
+return a+b
+if(operation==="-")
+return a-b
+if(operation==="*")
+return a*b
+if(operation==="/")
+return a/b
+
 }
