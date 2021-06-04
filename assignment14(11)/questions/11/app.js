@@ -1,11 +1,23 @@
-// 11. Create a Date object for the current date and time.
-// Extract the hours, reset the date object an hour ahead and
-// finally display the date object in your browser.
+// 11. Write a JavaScript function that accepts a string as a
+// parameter and converts the first letter of each word of the
+// string in upper case.
+// EXAMPLE STRING : 'the quick brown fox'
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+var data = prompt("Enter a string")
+var res = titlecase(data)
 
-var date = new Date();
-console.log(date)
-var updatedDate = date.setHours(date.getHours()+1)
-updatedDate = new Date(updatedDate)
-console.log(updatedDate)
+alert("Title Case: "+res)
 
-alert("open console")
+function titlecase(a) {
+    var arr = []
+    arr = a.split("")
+    arr[0] = arr[0].toUpperCase()
+
+    for (i = 0; i < a.length; i++) {
+        if (arr[i] == " ") {
+            arr[i + 1] = arr[i + 1].toUpperCase()
+        }
+    }
+    a = arr.join("")
+    return a
+}
