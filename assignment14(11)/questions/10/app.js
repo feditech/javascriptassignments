@@ -1,12 +1,14 @@
-// 10. Write a program that displays in your browser the
-// seconds that elapsed between the reference date and the
-// beginning of 2015.
+// 10. Write a JavaScript function that checks whether a passed
+// string is palindrome or not?
+// A palindrome is word, phrase, or sequence that reads the same backward as
+// forward, e.g., madam.
 
-var beginning = new Date("Jan 1 2021")
+var userInput = prompt("Enter a string")
+palindrome(userInput)
 
-var dateNow= new Date();
+function palindrome(a) {
+    var check = a.split("").reverse().join("")
 
-var diff = dateNow.getTime() - beginning.getTime();
-diff= diff/(1000)
-diff = Math.floor(diff)
-alert(diff+" seconds have passed since start of 2021")
+    if (a === check) { alert(a + " is a palindrome") }
+    else { alert(a + " is not a palindrome") }
+}
