@@ -1,14 +1,12 @@
-// 6. Write a program that determines the minutes since
-// midnight, Jan. 1, 1970 and assigns it to a variable that
-// hasn't been declared beforehand. Use any variable you like
-// to represent the Date object.
+// 6. Write a function that computes factorial of a number.
 
-var date = new Date();
-alert(date)
+var n = +prompt("enter a number")
 
-var mili = date.getTime();
-alert("Miliseconds since Jan 1, 1970: "+ mili)
+alert("factorial of "+n+ " is "+fac(n))
 
-var min = mili/(1000*60)
-
-alert("Minutes since Jan 1, 1970: "+min)
+function fac(a) {
+    if (a == 0 || a == 1)
+        return 1;
+    else
+        return a * fac(a - 1)
+}
