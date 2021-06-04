@@ -1,12 +1,17 @@
-// 9. Create a date object of the starting date of this Ramadan
-// and alert the number of days past since 1st Ramadan?
-// Note: 1st Ramadan was on Apr 12, 2021
+// 9. Write a function that calculates the area of a rectangle.
+// A = width * height
+// Pass width and height in following manner:
 
-var ramadan = new Date("Apr 12 2021")
+// i. Arguments as value
+// ii. Arguments as variables
 
-var dateNow= new Date();
+var w = +prompt("Enter width")
+var h = +prompt("Enter height")
 
-var diff = dateNow.getTime() - ramadan.getTime();
-diff= diff/(1000*60*60*24)
-diff = Math.floor(diff)
-alert(diff+" Days have passed since Ramadan 1")
+alert("Area: "+area(w,h) + " (variable as argument) ")
+alert("Area: "+area(5,6) + " (value as argument) ")
+
+
+function area(a,b){
+    return a*b
+}
