@@ -1,18 +1,13 @@
-// 7. Write a function that take start and end number as inputs
-// & display counting in your browser.
+// 7. Write a function with switch statement to count the number of
+// occurrences of any two vowels in succession in a line of text.
+// For example, in the sentence
+// “Pleases read this application and give me gratuity”
+// Such occurrences are ea, ea, ui.
 
-var n1 = +prompt("enter starting number")
-var n2 = +prompt("enter ending number")
+var str = prompt("Enter a sentence")
 
 
 
-document.write(counting(n1,n2))
-
-function counting(a,b){
-    var arr =[],index=0 
-    for(var i = a ;i<=b;i++){
-        arr[index] = i;
-        index++;
-    }
-        return arr
+switch(str){
+    case 
 }

@@ -1,28 +1,30 @@
-// 8. Write a nested function that computes hypotenuse of a
-// right angle triangle.
-// Hypotenuse2 = Base2 + Perpendicular2
+// 8. The distance between two cities (in km.) is input through the
+// keyboard. Write four functions to convert and print this
+// distance in meters, feet, inches and centimeters.
 
-// Take base and perpendicular as inputs.
-// Outer function : calculateHypotenuse()
-// Inner function: calculateSquare()
+var km = +prompt("enter distance in km")
+var m = kmToM(km)
+var feet = kmToFeet(km)
+var inches = kmToInches(km)
+var centimeters = kmToCentimeters(km)
+
+    document.write("<h1>" + "Distance in km: " + km + "</h1>")
+document.write("<h1>" + "Distance in m: " + m + "</h1>")
+document.write("<h1>" + "Distance in feet: " + feet + "</h1>")
+document.write("<h1>" + "Distance in inches: " + inches + "</h1>")
+document.write("<h1>" + "Distance in centimeters: " + centimeters + "</h1>")
 
 
-var base = +prompt("Enter base of triangle")
-var perp = +prompt("Enter base of triangle")
-
-alert("hypotenuse is: "+ calculateHypotenuse(base,perp))
-
-
-function calculateHypotenuse(base, perp) {
-    var arr = sqr(base, perp)
-    return arr[0] + arr[1]
-
+function kmToM(a) {
+    return a * 1000
 }
 
-function sqr(a, b) {
-    var arr = []
-    arr[0] = a * a;
-    arr[1] = b * b;
-
-    return arr
+function kmToFeet(a) {
+    return a * 3280.84
+}
+function kmToInches(a) {
+    return a * 39370.1
+}
+function kmToCentimeters(a) {
+    return a * 100000
 }
