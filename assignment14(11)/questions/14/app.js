@@ -1,25 +1,34 @@
-// 14. You have an array
-// A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
-// Write a program to enable “search by user input” in an
-// array. After searching, prompt the user whether the given
-// item is found in the list or not.
-// Note: Perform case insensitive search. Whether the user
-// enters cookie, Cookie, COOKIE or coOkIE, program
-// should inform about its availability.
 
-var A = ["cake", "apple pie", "cookie", "chips", "patties"]
+// 14. The Geometrizer
+// Create 2 functions that calculate properties of a circle, using
+// the definitions here.
+// Create a function called calcCircumference:
+// • Pass the radius to the function.
+// • Calculate the circumference based on the radius, and output
+// "The circumference is NN".
+// Create a function called calcArea:
+// • Pass the radius to the function.
+// • Calculate the area based on the radius, and output "The area
+// is NN".
 
-var userInput= prompt("welcome TO SIR GHOUS BAkery. wHAT DO you want to order? ");
-userInput = userInput.toLocaleLowerCase();
-var res;
-for(var i =0; i<A.length;i++){
-    if(userInput===A[i])
-    var res = userInput;
-}
-if(res === undefined){
-    alert(userInput+ " is not available")
-}
-else{
-    alert(userInput+ " is available")
+// Circumference of circle = 2πr
+// Area of circle = πr2
+
+
+
+userInput = prompt("enter Radius of circle")
+
+var circum= calcCircumference(userInput)
+var area = calcArea(userInput)
+
+document.write("<h1>"+ "Circumference of Circle is: "+circum +"</h1>")
+document.write("<h1>"+ "Area of Circle is: "+area +"</h1>")
+
+
+function calcCircumference(r){
+return 2* (22/7) * r
 }
 
+function calcArea(r){
+    return (22/7) * r**2
+}
