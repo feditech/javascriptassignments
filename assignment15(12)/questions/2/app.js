@@ -1,20 +1,19 @@
-// 2. Write a function that takes first & last name and then it
-// greets the user using his full name.
+// 2. Any year is entered through the keyboard. Write a function to
+// determine whether the year is a leap year or not.
 
 
 
+var userInput =+prompt("enter a year")
 
-var firstName = prompt("Enter first name")
-var lastName = prompt("Enter last name")
+if(leap(userInput)==1){
+    alert(userInput+" is a leap year.")
+}else 
+alert(userInput+" is not a leap year.")
 
-
-fullName(firstName,lastName)
-
-
-
-
-
-function fullName(first,last){
-    var fullName = first + " " + last;
-    alert("Hello!!! "+fullName)
+function leap( a)
+{
+	var i=0;
+	if((a % 4 && a % 100 && a % 400)==0)
+		i=1;
+	return i;
 }
