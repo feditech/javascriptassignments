@@ -1,17 +1,22 @@
-// 9. Write a function that calculates the area of a rectangle.
-// A = width * height
-// Pass width and height in following manner:
+// 9. Write a program to calculate overtime pay of employees.
+// Overtime is paid at the rate of Rs. 12.00 per hour for every hour
+// worked above 40 hours. Assume that employees do not work
+// for fractional part of an hour.
 
-// i. Arguments as value
-// ii. Arguments as variables
-
-var w = +prompt("Enter width")
-var h = +prompt("Enter height")
-
-alert("Area: "+area(w,h) + " (variable as argument) ")
-alert("Area: "+area(5,6) + " (value as argument) ")
+var timeWork = +prompt("enter hours worked")
 
 
-function area(a,b){
-    return a*b
+var res = payCalc(timeWork)
+
+alert(res)
+
+
+
+
+function payCalc(a) {
+    if (a <= 48)
+        return ("over time pay: " + 0)
+    else {
+        return ("over time pay: "+ (a-48)*12)
+    }
 }
