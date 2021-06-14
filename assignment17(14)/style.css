@@ -1,0 +1,12 @@
+
+img{
+    height: 100px;
+    margin-top: 4px;
+    margin-left: 5px;
+    width: 90%;
+    border-radius: 50%;
+}
+.body{
+    border: 2px solid black;
+    width: 10%;
+}
