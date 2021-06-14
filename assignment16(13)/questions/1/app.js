@@ -1,12 +1,5 @@
-// 1. Write a custom function power ( a, b ), to calculate the value of
-// a raised to b.
+// 1. Show an alert box on click on a link.
+// 2. Display some Mobile images in browser. On click on an
+// image Show the message in alert to user.
 
 
-var num = +prompt("Enter number")
-var exp = +prompt("Enter Power")
-
-document.write("<h1>"+ num + "<sup>"+ exp+"</sup>"+ " = "+ power(num,exp) +"</h1>")
-
-function power(a,b){
-    return a**b
-}
