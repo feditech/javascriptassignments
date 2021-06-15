@@ -2,14 +2,12 @@ function display(value) {
     
     var res = document.getElementById("result")
     res.value += value;
-    
-
+ 
     if(res.value[res.value.length-2]=='+')
 {
     if(res.value[res.value.length-1]=='+')
     {
         res.value = res.value.slice(0,length-1)
-        alert(res.value)
         
     }
     else if (res.value[res.value.length-1] =='-' ||res.value[res.value.length-1] =='*'||res.value[res.value.length-1] =='/')
@@ -94,7 +92,16 @@ function cancel(){
     res.value= res.value.slice(0,length-1)
 }
 
-
+// function plusminus(){
+//     var res = document.getElementById("result")
+//     if(res.value[0]=="-")
+//     {
+//         res.value[0] = "+"
+//     }elseif(res.value[0]==1||res.value[0]=="+")
+//     {
+//         res.value[0] = "-"
+//     } 
+// }
 
 
 
