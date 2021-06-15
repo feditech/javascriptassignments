@@ -2,7 +2,7 @@ function display(value) {
     
     var res = document.getElementById("result")
     res.value += value;
-   
+    
 
     if(res.value[res.value.length-2]=='+')
 {
