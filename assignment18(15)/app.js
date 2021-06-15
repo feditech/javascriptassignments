@@ -1,53 +1,147 @@
 function display(value) {
+    
     var res = document.getElementById("result")
-    
     res.value += value;
+   
 
-    var last = res.value[res.value.length-1]
-    var secondlast = res.value[res.value.length-2]
-    
-
-
-    
-    if(secondlast == "+" )
+    if(res.value[res.value.length-2]=='+')
+{
+    if(res.value[res.value.length-1]=='+')
     {
-        if(last =="+")
-        res.value = res.value.slice(0, res.value.length-1)
-        else  if(last == "-"||last == "*"||last == "/"){
-              res.value[res.value.length-2] = last
-              res.value = res.value.slice(0, res.value.length-1)
-        }
+        res.value = res.value.slice(0,length-1)
+        alert(res.value)
+        
     }
-    else if(secondlast == "-" )
+    else if (res.value[res.value.length-1] =='-' ||res.value[res.value.length-1] =='*'||res.value[res.value.length-1] =='/')
     {
-        if(last =="-")
-        res.value = res.value.slice(0, res.value.length-1)
-        else  if(last == "+"||last == "*"||last == "/"){
-              res.value[res.value.length-2] = last
-              res.value = res.value.slice(0, res.value.length-1)
-        }
+        var last= res.value[res.value.length-1]
+        res.value = res.value.slice(0,length-2)  
+        res.value +=  last
+        
     }
-    else if(secondlast == "*" )
+}
+else if(res.value[res.value.length-2]=='-')
+{
+    if(res.value[res.value.length-1]=='-')
     {
-        if(last =="*")
-        res.value = res.value.slice(0, res.value.length-1)
-        else  if(last == "-"||last == "+"||last == "/"){
+        res.value = res.value.slice(0,length-1)
+        
+    }
+    else if (res.value[res.value.length-1] =='+' ||res.value[res.value.length-1] =='*'||res.value[res.value.length-1] =='/')
+    {
+        var last= res.value[res.value.length-1]
+        res.value = res.value.slice(0,length-2)  
+        res.value +=  last 
+    }
+}
+
+
+else if(res.value[res.value.length-2]=='*')
+{
+    if(res.value[res.value.length-1]=='*')
+    {
+        res.value = res.value.slice(0,length-1)
+        
+    }
+    else if (res.value[res.value.length-1] =='+' ||res.value[res.value.length-1] =='-'||res.value[res.value.length-1] =='/')
+    {
+        var last= res.value[res.value.length-1]
+        res.value = res.value.slice(0,length-2)  
+        res.value +=  last 
+    }
+}
+
+
+else if(res.value[res.value.length-2]=='/')
+{
+    if(res.value[res.value.length-1]=='/')
+    {
+        res.value = res.value.slice(0,length-1)
+        
+    }
+    else if (res.value[res.value.length-1] =='+' ||res.value[res.value.length-1] =='-'||res.value[res.value.length-1] =='*')
+    {
+        var last= res.value[res.value.length-1]
+        res.value = res.value.slice(0,length-2)  
+        res.value +=  last 
+    }
+}
+
+
+}
+
+
+function off() {
+    var res = document.getElementById("result")
+
+    res.value = ''
+    res.placeholder = ''
+}
+
+
+function on() {
+    var res = document.getElementById("result")
+
+    res.value = ''
+    res.placeholder = 0
+}
+
+
+
+function cancel(){
+    var res = document.getElementById("result")
+
+    res.value= res.value.slice(0,length-1)
+}
+
+
+
+
+
+
+
+
+
+    
+    // if(secondlast == "+" )
+    // {
+    //     if(last =="+")
+    //     res.value = res.value.slice(0, res.value.length-1)
+    //     else  if(last == "-"||last == "*"||last == "/"){
+    //           res.value[res.value.length-2] = last
+    //           res.value = res.value.slice(0, res.value.length-1)
+    //     }
+    // }
+    // else if(secondlast == "-" )
+    // {
+    //     if(last =="-")
+    //     res.value = res.value.slice(0, res.value.length-1)
+    //     else  if(last == "+"||last == "*"||last == "/"){
+    //           res.value[res.value.length-2] = last
+    //           res.value = res.value.slice(0, res.value.length-1)
+    //     }
+    // }
+    // else if(secondlast == "*" )
+    // {
+    //     if(last =="*")
+    //     res.value = res.value.slice(0, res.value.length-1)
+    //     else  if(last == "-"||last == "+"||last == "/"){
             
-              res.value = res.value.slice(0, res.value.length-1)
-                alert(res.value.charAt(res.value.length-1))  
-            //    
-            //   alert(res.value)
-            }
-    }
-    if(secondlast == "/" )
-    {
-        if(last =="/")
-        res.value = res.value.slice(0, res.value.length-1)
-        else  if(last == "-"||last == "*"||last == "+"){
-              res.value[res.value.length-2] = last
-              res.value = res.value.slice(0, res.value.length-1)
-        }
-    }
+    //           res.value = res.value.slice(0, res.value.length-1)
+    //           res.value.charAt(res.value.length) = last
+    //         //    
+    //         //   alert(res.value)
+    //         }
+    // }
+    // if(secondlast == "/" )
+    // {
+    //     if(last =="/")
+    //     res.value = res.value.slice(0, res.value.length-1)
+    //     else  if(last == "-"||last == "*"||last == "+"){
+    //           res.value[res.value.length-2] = last
+    //           res.value = res.value.slice(0, res.value.length-1)
+    //     }
+    // }
 
 
   /*  // if(secondlast == "+"||secondlast == "-"||secondlast == "*"||secondlast == "/")
@@ -74,20 +168,5 @@ function display(value) {
     // }
 
     // res.value += value;*/
-}
 
 
-function off() {
-    var res = document.getElementById("result")
-
-    res.value = ''
-    res.placeholder = ''
-}
-
-
-function on() {
-    var res = document.getElementById("result")
-
-    res.value = ''
-    res.placeholder = 0
-}

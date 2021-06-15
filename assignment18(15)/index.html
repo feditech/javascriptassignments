@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../0bootstrap css files/v5/bootstrap.css">
 </head>
 
 <body>
@@ -17,58 +18,61 @@
 
     <h1>Assignment 17 Calculator</h1>
 
-    <div class="container">
-        <div class="calculator">
-            <div class="output">
-                <input type="text" name="result" value="" id="result" placeholder="0" readonly>
+    <div class="box">
+        <div class="display">
+            <input size="15" type="text" name="result" value="" id="result" placeholder="0" readonly>
 
-            </div>
+        </div>
 
-            <div class="body">
+        <div class="keys">
 
-                <div class="row1">
-                    <button onclick="off() ">OFF</button>
-                    <button onclick="on()">ON</button>
-                </div>
+            <p>
+                <button class="button gray" onclick="cancel() ">C</button>
+                <button class="button gray" onclick="off() ">OFF</button>
+                <button class="button gray" onclick="on()">ON</button>
+            </p>
 
-                <div class="row2">
-                    <button onclick="display(7)">7</button>
-                    <button onclick="display(8)">8</button>
-                    <button onclick="display(9)">7</button>
-                    <button onclick="display('/')">÷</button>
-                </div>
-
-
-                <div class="row3">
-                    <button onclick="display(4)">4</button>
-                    <button onclick="display(5)">5</button>
-                    <button onclick="display(6)">6</button>
-                    <button onclick="display('*')">*</button>
-
-                </div>
+            <p>
+                <button class="button black" onclick="display(7)">7</button>
+                <button class="button black" onclick="display(8)">8</button>
+                <button class="button black" onclick="display(9)">9</button>
+                <button class="button pink" onclick="display('/')">÷</button>
+            </p>
 
 
-                <div class="row4">
-                    <button onclick="display(1)">1</button>
-                    <button onclick="display(2)">2</button>
-                    <button onclick="display(3)">3</button>
-                    <button onclick="display('-')"> - </button>
-                </div>
+            <p>
+
+                <button class="button black" onclick="display(4)">4</button>
+                <button class="button black" onclick="display(5)">5</button>
+                <button class="button black" onclick="display(6)">6</button>
+                <button class="button pink" onclick="display('*')">*</button>
+
+            </p>
+
+
+            <p>
+
+                <button class="button black" onclick="display(1)">1</button>
+                <button class="button black" onclick="display(2)">2</button>
+                <button class="button black" onclick="display(3)">3</button>
+                <button class="button pink" onclick="display('-')"> - </button>
+            </p>
 
 
 
 
-                <div class="row5">
-                    <button onclick="display(0)">0</button>
-                    <button onclick="display('.')">.</button>
-                    <button onclick="display('+')">+</button>
-                    <button onclick="result.value = eval(result.value)">=</button>
-                </div>
-                
+            <p>
 
-            </div>
+                <button class="button black" onclick="display(0)">0</button>
+                <button class="button black" onclick="display('.')">.</button>
+                <button class="button pink" onclick="display('+')">+</button>
+                <button class="button orange" onclick="result.value = eval(result.value)">=</button>
+            </p>
+
+
         </div>
     </div>
+
 
 
     <script src="app.js"></script>
