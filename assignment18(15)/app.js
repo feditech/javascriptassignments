@@ -6,7 +6,8 @@ function display(value) {
     if(res.value[0]=="*"||res.value[0]=="/"){
         res.value=""
     }
- 
+
+
     if(res.value[res.value.length-2]=='+')
 {
     if(res.value[res.value.length-1]=='+')
