@@ -7,10 +7,6 @@ function display(value) {
         res.value=""
     }
  
-
-
-
-
     if(res.value[res.value.length-2]=='+')
 {
     if(res.value[res.value.length-1]=='+')
