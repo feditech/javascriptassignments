@@ -1,0 +1,9 @@
+.main{
+    display: flex;
+   
+}
+
+img{
+    height: 300px;
+    width: 100%;
+}

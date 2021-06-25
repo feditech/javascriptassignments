@@ -4,7 +4,7 @@ function display(value) {
     var res = document.getElementById("result")
     res.value += value;
     
-    //for checking if starting value is * or /
+    //for checking if starting value is * or /  
     if(res.value[0]=="*"||res.value[0]=="/"){
         res.value=""
     }

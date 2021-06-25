@@ -1,0 +1,182 @@
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2020/01/21/18/39/todo-4783676_640.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    
+}
+
+.main{
+
+    width: 80%;
+    background-color:transparent;
+    margin: 20px 10% 20px 10%;
+    
+   
+}
+
+ .mainhead{
+    width: 80%;
+    margin: 20px 25% 20px 25%;
+    display: flex;
+    
+}
+
+.mainhead>input{
+    width: 300px;
+    height: 40px;
+    font-size: 24px;
+    background-color: yellow;
+}
+
+
+.addbtn{
+    font-size: 18px;
+    color:white;
+    background-color:green;
+    font-family: cursive;
+}
+
+
+.resetbtn{
+    font-size: 18px;
+    color:white;
+    background-color: red;
+    font-family: cursive;
+}
+
+
+ul{
+
+    margin: 20px 25% 20px 25%;
+    
+    
+}
+
+li{
+    display: flexbox;
+} 
+
+
+.list-input{
+    width: 300px;
+    height: 40px;
+    font-size: 24px;
+    background-color: yellow;
+}
+
+.delbtn{
+    font-size: 18px;
+    color:white;
+    background-color: red;
+    font-family: cursive;
+}
+
+
+.editbtn{
+    font-size: 18px;
+    color:white;
+    background-color: yellowgreen;
+    font-family: cursive;
+}
+
+
+
+@media only screen and (max-width: 360px) {
+    body {
+      background-color: lightblue;
+      background-repeat: no-repeat;
+      background-position:50px 100px;
+      background-size: 200px;
+      margin: 0;
+      padding: 0;
+    }
+ 
+    .main{
+
+        width: 100%;
+       
+        
+       
+    }
+
+    .mainhead{
+        width: 100%;
+        margin: 0 auto;
+        border: 2 px solid red;
+        
+    }
+
+    .mainhead>input{
+        width: 130px;
+        height: 25px;
+        font-size: 12px;
+        background-color: yellow;
+    }
+
+    
+    
+    .addbtn{
+        font-size: 8px;
+        width: 40px;
+        height: 29px;
+        color:white;
+        background-color:green;
+        font-family: cursive;
+    }
+    
+    
+    .resetbtn{
+        font-size: 8px;
+        height: 29px;
+        width: 50px;
+        color:white;
+        background-color: red;
+        font-family: cursive;
+    }
+
+    ul{
+
+        margin: 0 auto;
+        padding: 0;
+        list-style-type: none;
+        
+        
+    }
+    li{
+        margin: 5px 0 0 0;
+       
+       
+    } 
+
+    .list-input{
+        width: 110px;
+        height: 15px;
+        font-size: 15px;
+        background-color: yellow;
+    }
+    
+    .delbtn{
+        font-size: 12px;
+        color:white;
+        background-color: red;
+        font-family: cursive;
+    }
+    
+    
+    .editbtn{
+        font-size: 12px;
+        color:white;
+        background-color: yellowgreen;
+        font-family: cursive;
+    }
+
+
+
+
+
+
+
+
+
+}
+  
