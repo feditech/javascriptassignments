@@ -107,9 +107,9 @@ li{
     }
 
     .mainhead>input{
-        width: 130px;
-        height: 25px;
-        font-size: 12px;
+        width: 160px;
+        height: 40px;
+        font-size: 22px;
         background-color: yellow;
     }
 
@@ -117,8 +117,8 @@ li{
     
     .addbtn{
         font-size: 8px;
-        width: 40px;
-        height: 29px;
+        width: 80px;
+        height: 40px;
         color:white;
         background-color:green;
         font-family: cursive;
@@ -127,8 +127,8 @@ li{
     
     .resetbtn{
         font-size: 8px;
-        height: 29px;
-        width: 50px;
+        height: 40px;
+        width: 80px;
         color:white;
         background-color: red;
         font-family: cursive;
