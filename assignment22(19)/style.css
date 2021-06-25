@@ -107,7 +107,7 @@ li{
     }
 
     .mainhead>input{
-        width: 160px;
+        width: 170px;
         height: 40px;
         font-size: 22px;
         background-color: yellow;
@@ -116,7 +116,7 @@ li{
     
     
     .addbtn{
-        font-size: 8px;
+        font-size: 22px;
         width: 80px;
         height: 40px;
         color:white;
@@ -126,7 +126,7 @@ li{
     
     
     .resetbtn{
-        font-size: 8px;
+        font-size: 22px;
         height: 40px;
         width: 80px;
         color:white;
@@ -149,14 +149,14 @@ li{
     } 
 
     .list-input{
-        width: 110px;
-        height: 15px;
+        width: 140px;
+        height: 22px;
         font-size: 15px;
         background-color: yellow;
     }
     
     .delbtn{
-        font-size: 12px;
+        font-size: 22px;
         color:white;
         background-color: red;
         font-family: cursive;
@@ -164,7 +164,7 @@ li{
     
     
     .editbtn{
-        font-size: 12px;
+        font-size: 22px;
         color:white;
         background-color: yellowgreen;
         font-family: cursive;
