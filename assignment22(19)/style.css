@@ -116,9 +116,9 @@ li{
     
     
     .addbtn{
-        font-size: 22px;
+        font-size: 18px;
         width: 80px;
-        height: 40px;
+        height: 44px;
         color:white;
         background-color:green;
         font-family: cursive;
@@ -126,8 +126,9 @@ li{
     
     
     .resetbtn{
-        font-size: 22px;
-        height: 40px;
+        margin-left: 5px;
+        font-size: 18px;
+        height: 44px;
         width: 80px;
         color:white;
         background-color: red;
@@ -155,13 +156,6 @@ li{
         background-color: yellow;
     }
     
-    .delbtn{
-        font-size: 22px;
-        color:white;
-        background-color: red;
-        font-family: cursive;
-    }
-    
     
     .editbtn{
         font-size: 22px;
@@ -169,6 +163,15 @@ li{
         background-color: yellowgreen;
         font-family: cursive;
     }
+    .delbtn{
+        margin-left: 5px;
+        font-size: 22px;
+        color:white;
+        background-color: red;
+        font-family: cursive;
+    }
+    
+    
 
 
 
