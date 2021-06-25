@@ -85,8 +85,8 @@ li{
     body {
       background-color: lightblue;
       background-repeat: no-repeat;
-      background-position:50px 100px;
-      background-size: 200px;
+      background-position:150px 200px;
+      background-size: 300px;
       margin: 0;
       padding: 0;
     }
