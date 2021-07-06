@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form class="mainForm" id="mainForm">
+        Name: <input required type="text" name="name" id="name" value><br>
+        Gender: <input required type="radio" name="gender" id="gender" value="male">Male
+        <input required type="radio" name="gender" id="gender" value="female">FeMale<br>
+        Address: <textarea required name="address" id="address" cols="30" rows="5" placeholder=" Enter Address"></textarea> <br>
+        Education: <select required name="education" id="education">
+            <option value=""></option>
+            <option value="Matric">Matric</option>
+            <option value="Inter">Intermediate</option>
+            <option value="Bachelor">Bachelor</option>
+            <option value="Master">Master</option>
+        </select><br>
+        Profession: <select required name="profession" id="profession">
+            <option value=""></option>
+            <option value="teacher">Teacher</option>
+            <option value="Technician">Technician</option>
+            <option value="BusinessMen">Business Man</option>
+            <option value="Clerk">Clerk</option>
+        </select><br>
+       <button type="submit" onclick="getData()">Submit Form </button>
+    </form>
+  
+    <a href="../../index.html">Go back</a>
+    <script src="app.js"></script>
+</body>
+
+</html>
