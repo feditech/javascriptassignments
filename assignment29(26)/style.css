@@ -1,0 +1,31 @@
+.main-portion {
+  width: 100%;
+}
+
+/* LOgin page styling */
+
+.mainbox {
+  width: 40%;
+  margin: 100px 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 2px solid;
+}
+
+.mainbox-head {
+  width: 100%;
+  background-color: rgb(280, 147,147);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mainbox-head h1 {
+  width: 60%;
+  padding-left: 70px;
+}
+.mainbox-head .link {
+  color: blueviolet;
+}
+
