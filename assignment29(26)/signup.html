@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <link rel="stylesheet" href="../0bootstrap css files/v4/bootstrap.css"> 
-    <link rel="stylesheet" href="../0bootstrap css files/v5/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
     <script
       src="https://kit.fontawesome.com/7b64e0fdd0.js"
       crossorigin="anonymous"
     ></script>
-</head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
 <body>
     
     <div class="mainbox">
@@ -27,21 +27,21 @@
         <div class="mainbox-inputs">
             <div class="input" >
                 <span>Username:</span> <br>  
-                <input type="text" placeholder="Enter your" />
+                <input id="uname" type="text" placeholder="Enter name" />
               </div> 
           <div class="input" >
             <span>email:</span> <br>  
-            <input type="text" placeholder="Enter email" />
+            <input id="email" type="text" placeholder="Enter email" />
           </div> 
           <div class="input">
            <span>password: </span>  <br>
-            <input type="password" placeholder="Enter password" />
+            <input id="password" type="password" placeholder="Enter password" />
           </div>
-          <div class="input btn">
-            <button> Signup </button> 
-            <input type="submit" value="signup">
-           </div>
         </div>
+          <div class="btn">
+            <input onclick="register()" type="submit" value="signup">
+           </div>
+        
         <div class="msg">
           <h2>new user...? <a href="login.html"> Login </a> here</h2>
         </div>
@@ -49,6 +49,36 @@
 
 
 
+
+
+
+
+      
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyB3WykG4CbGJm19A1uMbkXt9Yg8SCs927A",
+    authDomain: "javascriptpractice-c8dde.firebaseapp.com",
+    projectId: "javascriptpractice-c8dde",
+    storageBucket: "javascriptpractice-c8dde.appspot.com",
+    messagingSenderId: "139519736241",
+    appId: "1:139519736241:web:ecfa47115158631389e590",
+    measurementId: "G-VX7J7FJB13"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 
     <script src="app.js"></script>
 </body>
