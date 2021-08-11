@@ -22,17 +22,7 @@ let login = () => {
 
 
                 
-        //     firebase.database().ref(`users/${user.uid}`)
-        //     .once('value',(data)=>{
-        //         let fetcheddata = data.val();
-            
-        //            for(var key in fetcheddata){
-        //                         console.log(key,fetcheddata[key])
-                
-        //     }
-            
-                
-        // })
+    
             setTimeout(()=>{
                 window.location = "profile.html"
             },1000)
@@ -112,19 +102,42 @@ let register = () => {
 
 
 
-// let profile = ()=>{
-//     let username = document.getElementById("username")
-//     let email = document.getElementById("email")
-//     let uid = firebase.auth().currentUser.uid
+let profile = ()=>{
 
-//     firebase.database().ref(`users/${uid}`)
-//     .once('value',(data)=>{
-//         console.log(data.val().Email)
-//     })
+    
+    setTimeout(()=>{
 
-// }
+        let username = document.getElementById("username")
+        let email = document.getElementById("email")
+        let userid = firebase.auth().currentUser.uid
+    
+        firebase.database().ref(`users/${userid}`)
+        .once('value',(data)=>{
+            console.log(data.val().Email)
+        })
+    
+    },20000)
+
+
+
+}
 
 
 let logout = ()=>{
 
 }
+
+
+// to get data from data base 
+
+    //     firebase.database().ref(`users/${user.uid}`)
+        //     .once('value',(data)=>{
+        //         let fetcheddata = data.val();
+            
+        //            for(var key in fetcheddata){
+        //                         console.log(key,fetcheddata[key])
+                
+        //     }
+            
+                
+        // })
