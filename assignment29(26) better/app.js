@@ -13,21 +13,41 @@ let login = () => {
     firebase.auth().signInWithEmailAndPassword(email.value, password.value)
         .then((res) => {
             // Signed in
+
             var user = res.user;
             successdiv.innerText = "Sign in Successful"
-
             loader.style.display = "none";
             loadertext.style.display = 'block';
             successdiv.style.display= "block"
 
+
+                
+        //     firebase.database().ref(`users/${user.uid}`)
+        //     .once('value',(data)=>{
+        //         let fetcheddata = data.val();
+            
+        //            for(var key in fetcheddata){
+        //                         console.log(key,fetcheddata[key])
+                
+        //     }
+            
+                
+        // })
+            setTimeout(()=>{
+                window.location = "profile.html"
+            },1000)
+
+
             // ...
         })
         .catch((error) => {
-            var errorCode = error.code;
+           
             var errorMessage = error.message;
             loader.style.display = "none";
             loadertext.style.display = 'block';
-
+            successdiv.style.display= "none"
+            errordiv.innerText= errorMessage;
+            errordiv.style.display="block"
         });
 
 
@@ -92,3 +112,19 @@ let register = () => {
 
 
 
+// let profile = ()=>{
+//     let username = document.getElementById("username")
+//     let email = document.getElementById("email")
+//     let uid = firebase.auth().currentUser.uid
+
+//     firebase.database().ref(`users/${uid}`)
+//     .once('value',(data)=>{
+//         console.log(data.val().Email)
+//     })
+
+// }
+
+
+let logout = ()=>{
+
+}
