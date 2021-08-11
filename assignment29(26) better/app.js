@@ -21,14 +21,12 @@ let login = () => {
             successdiv.style.display= "block"
 
 
-                
+            // console.log(firebase.auth().currentUser)              
     
             setTimeout(()=>{
                 window.location = "profile.html"
             },1000)
 
-
-            // ...
         })
         .catch((error) => {
            
@@ -103,24 +101,31 @@ let register = () => {
 
 
 let profile = ()=>{
-
+  
     
-    setTimeout(()=>{
-
+        
+    try{
         let username = document.getElementById("username")
         let email = document.getElementById("email")
         let userid = firebase.auth().currentUser.uid
-    
         firebase.database().ref(`users/${userid}`)
         .once('value',(data)=>{
-            console.log(data.val().Email)
-        })
+            username.innerText = data.val().Username
+            email.innerText = data.val().Email
+      
+            
+          })     
+    }catch(error){
+console.log(error)
+    }
+        
+   
     
-    },20000)
+    } 
+        
+        
 
 
-
-}
 
 
 let logout = ()=>{
