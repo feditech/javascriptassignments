@@ -9,6 +9,7 @@ let login = () => {
 
     loader.style.display = "block";
     loadertext.style.display = 'none';
+    errordiv.style.display="none"
 
     firebase.auth().signInWithEmailAndPassword(email.value, password.value)
         .then((res) => {
@@ -100,37 +101,40 @@ let register = () => {
 
 
 
-let profile = ()=>{
+// let profile = ()=>{
   
     
         
-    try{
-        let username = document.getElementById("username")
-        let email = document.getElementById("email")
-        let userid = firebase.auth().currentUser.uid
-        firebase.database().ref(`users/${userid}`)
-        .once('value',(data)=>{
-            username.innerText = data.val().Username
-            email.innerText = data.val().Email
+//     try{
+//         let username = document.getElementById("username")
+//         let email = document.getElementById("email")
+//         let userid = firebase.auth().currentUser.uid
+//         firebase.database().ref(`users/${userid}`)
+//         .once('value',(data)=>{
+//             username.innerText = data.val().Username
+//             email.innerText = data.val().Email
       
             
-          })     
-    }catch(error){
-console.log(error)
-    }
+//           })     
+//     }catch(error){
+// console.log(error)
+//     }
         
    
     
-    } 
+//     } 
         
+//     document.addEventListener('DOMContentLoaded', function() {
+//         // your code here
+//      }, false);
         
 
 
 
 
-let logout = ()=>{
+// let logout = ()=>{
 
-}
+// }
 
 
 // to get data from data base 
