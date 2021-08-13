@@ -9,7 +9,7 @@ let login = () => {
 
     loader.style.display = "block";
     loadertext.style.display = 'none';
-    errordiv.style.display="none"   
+    errordiv.style.display="none"
 
     firebase.auth().signInWithEmailAndPassword(email.value, password.value)
         .then((res) => {
