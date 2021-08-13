@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
      
@@ -27,12 +39,4 @@ firebase.auth().onAuthStateChanged((user) => {
   
 
 
-  let load = ()=>{
-      profiledata = document.getElementById("profiledata")
-      loader = document.getElementById("loader")
-
-      profiledata.style.display= "none"
-
-      loader.style.display = "block"
-      
-  }
+  

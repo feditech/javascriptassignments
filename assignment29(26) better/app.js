@@ -1,3 +1,10 @@
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+     window.location = "profile.html" }
+    })
+
+
+
 
 let login = () => {
     let email = document.getElementById("email")
